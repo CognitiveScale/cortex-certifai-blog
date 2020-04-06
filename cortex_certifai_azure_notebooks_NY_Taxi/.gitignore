@@ -1,0 +1,16 @@
+__pycache__/
+.DS_Store
+
+*.csv
+cortex-*
+requirements.txt
+cat_encoder.py
+
+explanation/
+.azureml/
+.ipynb_checkpoints/
+
+
+#Azure files
+*.pkl
+automated_ml_errors.log
