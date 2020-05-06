@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import re
 # The result is a dictionary keyed on analysis, containing reports keyed on model id
 # The console app is the recommended way to view these, by saving the results to file
 # (see previous cell), but programmatic analysis of the result here is also possible
@@ -53,10 +54,16 @@ def plot_histogram(ax, model_id, result):
     ax.set_xticklabels(feature_names[order], rotation=90)
 
 def plot_fairness_burden(df_rslt,group_categories,group_xlabels):
+    # Find the deatils column naming unit
+    group_unit = 'burden'
+    for c in df_rslt.columns:
+        m = re.fullmatch('Group ([^ ]+) \(.\.0\)', c)
+        if m is not None:
+            group_unit = m.group(1)
     nr_grp=len(group_categories)
-    feature_scores = df_rslt[[f"Group burden {ct}" for ct in group_categories]]
-    feature_lower_bounds = df_rslt[[f"Group burden {ct} lower bound" for ct in group_categories]]
-    feature_upper_bounds = df_rslt[[f"Group burden {ct} upper bound" for ct in group_categories]]
+    feature_scores = df_rslt[[f"Group {group_unit} {ct}" for ct in group_categories]]
+    feature_lower_bounds = df_rslt[[f"Group {group_unit} {ct} lower bound" for ct in group_categories]]
+    feature_upper_bounds = df_rslt[[f"Group {group_unit} {ct} upper bound" for ct in group_categories]]
 
     fig, ax = plt.subplots(figsize=[12,4])
     ax.set_title('Feature fairness by model', fontsize=20)
