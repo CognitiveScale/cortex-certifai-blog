@@ -1,5 +1,4 @@
 Dataset,Feature,Privileged class,Burden Index,"Demographic Parity (< .8 is deemed ""unfair"")",TPR (privileged),TPR (unprivileged),Equal Opportunity Difference            (< 0 means privileged class is favored)
 Compas,sex (male/female),Female,46.6539,0.6761,0.9239,0.7420,-0.1841
-Compas -- trim,sex (male/female),Female,37.5781,0.6954,0.9239,0.7420,-0.1841
 Adult,sex (male/female),Male,70.3406,0.2938,0.6061,0.4750,-0.1311
 German,sex (male/female),Male,69.4491,0.7217,0.9306,0.7931,-0.1375
