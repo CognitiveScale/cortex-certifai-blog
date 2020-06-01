@@ -1,0 +1,2 @@
+Dataset,Feature,Privileged class,Burden Index,"Demographic Parity (< .8 is deemed ""unfair"")",TPR (privileged),TPR (unprivileged),Equal Opportunity Difference            (< 0 means privileged class is favored)
+Titanic,sex (male/female),Female,-0.9273,0.0103,0.9646,0.0373,-0.9273
