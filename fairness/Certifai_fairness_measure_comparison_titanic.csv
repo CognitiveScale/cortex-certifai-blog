@@ -1,0 +1,2 @@
+Dataset,Feature,Privileged class,Burden Index,Disparate Impact Ratio,TPR (privileged),TPR (unprivileged),Equal Opportunity Difference
+Titanic ,sex (male/female), Female, 4.7893 , 0.0101 , 0.9648 , 0.0359 , -0.9289
