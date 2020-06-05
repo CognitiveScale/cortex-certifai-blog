@@ -1,4 +1,4 @@
 Dataset,Feature,Privileged class,Burden Index,Disparate Impact Ratio,TPR (privileged),TPR (unprivileged),Equal Opportunity Difference
 Compas , sex (male/female), Female, 43.2836 , 0.6472 , 0.9388 , 0.7261 , -0.2127
-German Credit , sex (male/female), Male, 64.9002 , 0.8277 , 0.9142 , 0.8462 , -0.0681
 Adult , sex (male/female), Male, 74.917 , 0.272 , 0.6094 , 0.4087 , -0.2007
+German Credit , sex (male/female), Male, 64.9002 , 0.8277 , 0.9142 , 0.8462 , -0.0681
